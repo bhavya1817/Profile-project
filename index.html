@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My First Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="brand" href="#">Profile Site</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="section">
+    <h2>Welcome to My First Website</h2>
+    <p>This is the Home page. Built using HTML, CSS, and JavaScript — running locally with Live Server.</p>
+    <img src="images/banner.jpg" alt="Website banner" class="banner" />
+    <p>The above image is of banner.</p>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section" style="display: none;">
+    <h2>About Me</h2>
+    <div class="about-inner">
+      <img src="images/profile.jpg" alt="Profile picture" class="profile" />
+      <div class="about-text">
+        <p>Hi! I’m learning web development. This page is made entirely with frontend code — no backend!</p>
+        <p>It demonstrates how you can show or hide sections using JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section" style="display: none;">
+    <h2>My Projects</h2>
+    <p>Here are a few projects I plan to add:</p>
+    <ul>
+      <li>🌦️ Weather App</li>
+      <li>🏥 Hospital Management System</li>
+      <li>🚆 Train Reservation Website</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section" style="display: none;">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:bjain5601@gmail.com">bjain5601@gmail.com</a></p>
+    <p>Connect with me on social media too!</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© <span id="year"></span> MySite</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
